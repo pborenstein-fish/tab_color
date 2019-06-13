@@ -6,7 +6,7 @@
 #   If no args, set to default color
 
 function tab_color -a red green blue  --description 'change the color of your iTerm tab to the given RGB values (space separated)'
-  echo -ne "\033]6;1;bg;*;default\a"  
+  # echo -ne "\033]6;1;bg;*;default\a"
   if test (count $argv) -ne 3
     return
   end
@@ -17,7 +17,7 @@ end
 
 #   Set to default color
 function tab_default
-  echo -ne "\033]6;1;bg;*;default\a"  
+  echo -ne "\033]6;1;bg;*;default\a"
 end
 
 
